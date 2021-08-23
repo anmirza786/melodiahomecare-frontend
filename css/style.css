@@ -104,3 +104,117 @@ h1 {
   list-style: none;
   padding-left: 0;
 }
+
+/* Hero Section */
+
+.hero-container {
+  margin: 0;
+}
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../images/doctor.jpg");
+  min-height: 70vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero__searchbar {
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-30%, -50%);
+  border: 1px solid black;
+  padding: 0px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.icon--white {
+  fill: white;
+}
+.hero__searchbar button .icon {
+  width: 15px;
+  height: 12px;
+}
+@media screen and (min-width: 400px) {
+  .hero__searchbar input {
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    height: 2rem;
+    width: 10rem;
+    padding-left: 7px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .hero__searchbar input::placeholder {
+    color: white;
+  }
+  .hero__searchbar button {
+    background-color: transparent;
+    height: 34px;
+    color: white;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .hero__searchbar {
+    border: 0;
+    background-color: transparent;
+  }
+  .hero__searchbar input {
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    height: 2rem;
+    padding-left: 7px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .hero__searchbar button {
+    background: darkblue;
+    margin-left: 30px;
+    width: 145px;
+    height: 20px;
+    border: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    color: white;
+  }
+  .hero__searchbar button .icon {
+    width: 20px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 400px) {
+  .hero__searchbar {
+    transform: translate(-25%, -60%);
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 770px) {
+  .hero__searchbar {
+    transform: translate(-15%, -50%);
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+  .hero__searchbar {
+    transform: translate(-10%, -60%);
+  }
+}
+@media screen and (min-width: 1401px) and (max-width: 1440px) {
+  .hero__searchbar {
+    transform: translate(10%, -60%);
+  }
+}
+@media screen and (min-width: 1450px) and (max-width: 2560px) {
+  .hero__searchbar {
+    transform: translate(65%, -60%);
+  }
+}
