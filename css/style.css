@@ -59,14 +59,28 @@ h1 {
   height: 20px;
   opacity: 0.7;
 }
+.nav-cross {
+  fill: white;
+  display: none;
+  opacity: 0;
+}
+.icon-small {
+  width: 30px;
+  height: 30px;
+}
 .collapsible__content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: all 0.3s;
 }
-.collapsible--expanded .nav-toggler {
+.collapsible--expanded .nav-cross {
+  display: block;
   opacity: 1;
+}
+.collapsible--expanded .nav-toggler {
+  display: none;
+  opacity: 0;
 }
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
@@ -74,7 +88,11 @@ h1 {
 }
 @media screen and (min-width: 786px) {
   .nav-toggler,
-  .nav-toggler-container {
+  .nav-toggler-container,
+  .nav-cross {
+    display: none;
+  }
+  .collapsible--expanded .nav-cross {
     display: none;
   }
   .nav__list {
@@ -217,4 +235,127 @@ h1 {
   .hero__searchbar {
     transform: translate(65%, -60%);
   }
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #232323;
+  padding-top: 10px;
+}
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: white;
+}
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+.footer__section .list {
+  margin: 0;
+}
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+.footer__brand img {
+  width: 100%;
+  height: auto;
+  max-width: 230px;
+}
+.footer__copyright {
+  color: white;
+  font-size: 2.1rem;
+  margin: 0;
+  opacity: 0.3;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.5rem;
+  }
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .footer .collapsible__chevron {
+    display: none;
+  }
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+    border-right: 1px solid white;
+  }
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+  .footer__section {
+    border: 0;
+  }
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+}
+.copy_right {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+  padding-bottom: 8px;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+hr {
+  margin: 5px;
+  border: 1px solid white;
+}
+.made_by::before {
+  content: "</>";
+}
+/* Collapsible */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 2rem;
+}
+.icon--white {
+  fill: white;
+}
+.collapsible__chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
 }
