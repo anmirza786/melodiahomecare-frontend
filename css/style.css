@@ -2,6 +2,7 @@
 body {
   font-size: 62.5%;
   margin: 0;
+  box-sizing: border-box;
 }
 h1 {
   font-size: 7rem;
@@ -316,11 +317,9 @@ h1 {
 }
 .copy_right {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 3px;
   padding-bottom: 8px;
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
 }
 hr {
   margin: 5px;
@@ -358,4 +357,87 @@ hr {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
+}
+
+/* Contact Form */
+
+.contactus-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contactus-form input[type="text"],
+.contactus-form input[type="email"] {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.contactus-form label {
+  padding: 15px 30px 15px 0;
+  display: inline-block;
+}
+.contactus-form input[type="submit"] {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  margin-top: 20px;
+}
+.contactus-form input[type="submit"]:hover {
+  background-color: rgb(63, 63, 245);
+}
+.contactus-form form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  width: 70vw;
+}
+.contactus-form .col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+.contactus-form .label-100 {
+  width: 100%;
+}
+.contactus-form .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.spam-control {
+  width: 10%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: -webkit-box;
+}
+.contactus-form textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+@media screen and (max-width: 600px) {
+  .contactus-form form {
+    width: 100vw;
+  }
+  .contactus-form .col-50,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .contactus-form label {
+    width: 50%;
+  }
 }
