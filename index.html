@@ -11,16 +11,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
+  <body onload="collaps()">
     <header class="nav__container">
-      <nav class="nav collapsible container">
+      <nav class="nav collapsible container" id="navi">
         <h1 class="nav__heading">
           <a href="practice.html">MelodiaHomeCare</a>
         </h1>
-        <svg class="icon nav-toggler">
+        <svg class="icon nav-toggler" onclick="expand()">
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
-        <svg class="nav-cross icon-small">
+        <svg class="nav-cross icon-small" onclick="collaps()">
           <use xlink:href="images/sprite-x.svg#letter-x"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
@@ -68,6 +68,93 @@
         </ul>
       </nav>
     </header>
+    <section>
+      <div class="hero">
+        <div class="hero__content">
+          <div class="content">
+            <h1>Header</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+              porro obcaecati esse id in qui mollitia accusamus nulla quos
+              maxime nisi hic eos magni, adipisci sed tempora placeat, non
+              harum!
+            </p>
+          </div>
+          <div class="hero__searchbar">
+            <input type="text" placeholder="Search Here" />
+            <button>
+              <svg class="icon icon--white icon-her--search">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsable footer__section">
+          <header class="collapsable__header">
+            <h2 class="collapsable__heading footer__heading">Basics</h2>
+            <svg class="icon icon--white collapsable__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsable__content">
+            <ul class="list footer__list">
+              <li><a href="">Home</a></li>
+              <li><a href="">Payment</a></li>
+              <li><a href="">About</a></li>
+              <li class="subheading"><a href="">About</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsable footer__section">
+          <header class="collapsable__header">
+            <h2 class="collapsable__heading footer__heading">Services</h2>
+            <svg class="icon icon--white collapsable__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsable__content">
+            <ul class="list footer__list">
+              <li><a href="">Item 1</a></li>
+              <li><a href="">Item 2</a></li>
+              <li><a href="">Item 3</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsable footer__section">
+          <header class="collapsable__header">
+            <h2 class="collapsable__heading footer__heading">
+              How Do We Work?
+            </h2>
+            <svg class="icon icon--white collapsable__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsable__content">
+            <ul class="list footer__list">
+              <li><a href="">Item 1</a></li>
+              <li><a href="">Item 2</a></li>
+              <li><a href="">Item 3</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <h1 class="nav__heading">
+            <a href="practice.html">MelodiaHomeCare</a>
+          </h1>
+        </section>
+      </div>
+      <hr />
+      <div class="copy_right">
+        <p class="footer__copyright">Copyright © 2021 MelodiaHomeCare</p>
+        <p class="footer__copyright">support@melodiahomecare.com</p>
+        <p class="footer__copyright made_by">RYKSOFT</p>
+      </div>
+    </footer>
     <script src="js/func.js"></script>
   </body>
 </html>
