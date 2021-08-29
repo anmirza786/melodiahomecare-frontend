@@ -11,3 +11,4 @@ function expand(){
 function collaps(){
     collapsable.classList.remove("collapsible--expanded");
 }
+

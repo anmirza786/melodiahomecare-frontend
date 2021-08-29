@@ -10,12 +10,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- jQuery -->
+    <link rel="stylesheet" href="js/jquery.flipster.min.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
   </head>
   <body onload="collaps()">
     <header class="nav__container">
       <nav class="nav collapsible container" id="navi">
         <h1 class="nav__heading">
-          <a href="practice.html">MelodiaHomeCare</a>
+          <a href="practice.html"
+            ><i class="fa fa-stethoscope"></i> <span>MelodiaHomeCare</span></a
+          >
         </h1>
         <svg class="icon nav-toggler" onclick="expand()">
           <use xlink:href="images/sprite.svg#menu"></use>
@@ -28,29 +35,48 @@
           <li class="nav__item collapsible--drop">
             <div class="dropdown">
               <div class="dropbtn">
-                <a href="#">Services <i class="fa fa-caret-down"></i></a>
+                <a href="#">About <i class="fa fa-caret-down"></i></a>
               </div>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Services & Areas</a>
+                <a href="#">Testimonials</a>
               </div>
             </div>
           </li>
           <li class="nav__item collapsible--drop">
             <div class="dropdown">
               <div class="dropbtn">
-                <a href="#">About <i class="fa fa-caret-down"></i></a>
+                <a href="#">Services <i class="fa fa-caret-down"></i></a>
               </div>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="">Skilled Nurse (SN)</a>
+                <a href="">Home Care Nursing (HCN)</a>
+                <a href="">Home Health Aide</a>
+                <a href="">Personal Care Assistance (PCA)</a>
+                <a href="">Homemaking Services</a>
+                <a href="">Therapy</a>
+                <a href="">IV Therapy</a>
+                <a href="">Interpretive Services</a>
+                <a href="">Independent Living Skills (ILS)</a>
+                <a href="">Companion</a>
+                <a href="">Respite</a>
+                <a href="">Social Services</a>
+                <a href="">Hospice</a>
               </div>
             </div>
           </li>
           <li class="nav__item"><a href="#">Payment</a></li>
-          <li class="nav__item"><a href="#">Careers</a></li>
+          <li class="nav__item collapsible--drop">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <a href="#">Career <i class="fa fa-caret-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">Employee Benefits</a>
+                <a href="#">Opening</a>
+              </div>
+            </div>
+          </li>
           <li class="nav__item"><a href="#">Contact</a></li>
           <li class="nav__item collapsible--drop">
             <div class="dropdown">
@@ -58,9 +84,8 @@
                 <a href="#">Hospice <i class="fa fa-caret-down"></i></a>
               </div>
               <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">What is Hospice?</a>
+                <a href="#">FAQ</a>
               </div>
             </div>
           </li>
@@ -92,6 +117,239 @@
         </div>
       </div>
     </section>
+    <section class="introduction--section">
+      <div class="introduction">
+        <div class="introduction--heading">
+          <h1>Introduction</h1>
+          <p>Hello to the world.</p>
+        </div>
+        <div class="introduction--image">
+          <p>
+            <img src="images/intro-image.jpeg" alt="" />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+            asperiores molestiae veritatis eum aut porro minus, nostrum magni ab
+            rem maiores. Natus quam aut, porro ipsa velit distinctio veritatis!
+            Rerum, earum similique! Veritatis sint autem saepe ex minus, dicta
+            corporis. Distinctio, nostrum ipsam! Veniam nostrum odio nobis ab
+            distinctio obcaecati deleniti perferendis. Natus blanditiis,
+            exercitationem commodi iure totam, recusandae voluptates doloremque
+            est illum ipsum perferendis eaque non. Voluptas perspiciatis
+            doloribus similique? Quasi tempora maxime saepe quis ducimus
+            nesciunt, libero earum esse quae cupiditate at odio voluptatibus,
+            unde blanditiis. Labore, sed! Fuga aut dignissimos molestiae velit
+            sint illo nostrum officiis assumenda. Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Voluptas iste possimus quasi porro
+            dolorem, voluptate itaque corporis, debitis, quae voluptates veniam
+            commodi esse. Debitis, labore nulla dolor assumenda architecto amet
+            repudiandae fugiat accusantium in porro deserunt eos numquam
+            voluptate et qui impedit. Totam dignissimos cupiditate incidunt,
+            provident optio, corrupti delectus facilis atque doloremque sunt
+            soluta animi amet ullam quae voluptatem. Ea sequi modi distinctio
+            amet dolor eum corrupti illum, eius veritatis inventore iste saepe
+            autem eveniet! Perferendis, laborum. Iure eveniet consequatur, earum
+            veritatis perferendis fugit! In quidem omnis, tempore consequuntur
+            vitae quis perspiciatis quam molestias assumenda voluptate hic,
+            consectetur nulla?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial testimonial-slider">
+      <h2>Testimonials</h2>
+
+      <div id="coverflow">
+        <ul class="flip-items">
+          <li>
+            <div class="testimonial--content">
+              <div class="qout">
+                <svg class="icon qout-icon" style="right: 0">
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-left-solid"
+                  ></use>
+                </svg>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem error sapiente autem voluptas quia omnis incidunt eos
+                  dicta quo illo consequuntur dolore necessitatibus, rem,
+                  possimus veritatis quaerat molestiae beatae obcaecati?
+                </p>
+                <svg
+                  class="icon qout-icon"
+                  style="
+                    align-self: flex-end;
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                  "
+                >
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-right-solid"
+                  ></use>
+                </svg>
+              </div>
+              <div class="qout--by">
+                <img src="images/intro-image.jpeg" alt="" />
+                <h1>Jhon Doe</h1>
+                <p>Good Customer</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial--content">
+              <div class="qout">
+                <svg class="icon qout-icon" style="right: 0">
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-left-solid"
+                  ></use>
+                </svg>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem error sapiente autem voluptas quia omnis incidunt eos
+                  dicta quo illo consequuntur dolore necessitatibus, rem,
+                  possimus veritatis quaerat molestiae beatae obcaecati?
+                </p>
+                <svg
+                  class="icon qout-icon"
+                  style="
+                    align-self: flex-end;
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                  "
+                >
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-right-solid"
+                  ></use>
+                </svg>
+              </div>
+              <div class="qout--by">
+                <img src="images/intro-image.jpeg" alt="" />
+                <h1>Jhon Doe</h1>
+                <p>Good Customer</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial--content">
+              <div class="qout">
+                <svg class="icon qout-icon" style="right: 0">
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-left-solid"
+                  ></use>
+                </svg>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem error sapiente autem voluptas quia omnis incidunt eos
+                  dicta quo illo consequuntur dolore necessitatibus, rem,
+                  possimus veritatis quaerat molestiae beatae obcaecati?
+                </p>
+                <svg
+                  class="icon qout-icon"
+                  style="
+                    align-self: flex-end;
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                  "
+                >
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-right-solid"
+                  ></use>
+                </svg>
+              </div>
+              <div class="qout--by">
+                <img src="images/intro-image.jpeg" alt="" />
+                <h1>Jhon Doe</h1>
+                <p>Good Customer</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial--content">
+              <div class="qout">
+                <svg class="icon qout-icon" style="right: 0">
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-left-solid"
+                  ></use>
+                </svg>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem error sapiente autem voluptas quia omnis incidunt eos
+                  dicta quo illo consequuntur dolore necessitatibus, rem,
+                  possimus veritatis quaerat molestiae beatae obcaecati?
+                </p>
+                <svg
+                  class="icon qout-icon"
+                  style="
+                    align-self: flex-end;
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                  "
+                >
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-right-solid"
+                  ></use>
+                </svg>
+              </div>
+              <div class="qout--by">
+                <img src="images/intro-image.jpeg" alt="" />
+                <h1>Jhon Doe</h1>
+                <p>Good Customer</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="testimonial--content">
+              <div class="qout">
+                <svg class="icon qout-icon" style="right: 0">
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-left-solid"
+                  ></use>
+                </svg>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quidem error sapiente autem voluptas quia omnis incidunt eos
+                  dicta quo illo consequuntur dolore necessitatibus, rem,
+                  possimus veritatis quaerat molestiae beatae obcaecati?
+                </p>
+                <svg
+                  class="icon qout-icon"
+                  style="
+                    align-self: flex-end;
+                    margin-top: 0;
+                    margin-bottom: 50px;
+                  "
+                >
+                  <use
+                    xlink:href="images/sprite-qout.svg#quote-right-solid"
+                  ></use>
+                </svg>
+              </div>
+              <div class="qout--by">
+                <img src="images/intro-image.jpeg" alt="" />
+                <h1>Jhon Doe</h1>
+                <p>Good Customer</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <script>
+        var coverflow = $("#coverflow").flipster({
+          loop: true,
+          autoplay: 4000,
+          pauseOnHover: false,
+          style: "coverflow",
+          spacing: -0.6,
+          click: false,
+          keyboard: false,
+          scrollwheel: false,
+          touch: false,
+          nav: false,
+          buttons: true,
+          buttonPrev: "Previous",
+          buttonNext: "Next",
+          onItemSwitch: false,
+        });
+      </script>
+    </section>
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsable footer__section">
@@ -107,21 +365,6 @@
               <li><a href="">Payment</a></li>
               <li><a href="">About</a></li>
               <li class="subheading"><a href="">About</a></li>
-            </ul>
-          </div>
-        </section>
-        <section class="collapsable footer__section">
-          <header class="collapsable__header">
-            <h2 class="collapsable__heading footer__heading">Services</h2>
-            <svg class="icon icon--white collapsable__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-          </header>
-          <div class="collapsable__content">
-            <ul class="list footer__list">
-              <li><a href="">Item 1</a></li>
-              <li><a href="">Item 2</a></li>
-              <li><a href="">Item 3</a></li>
             </ul>
           </div>
         </section>
@@ -143,16 +386,23 @@
           </div>
         </section>
         <section class="footer__brand">
-          <h1 class="nav__heading">
-            <a href="practice.html">MelodiaHomeCare</a>
+          <h1 class="nav__heading footer__brand-heading">
+            <a href="#"
+              ><i class="fa fa-stethoscope"></i> <span>MelodiaHomeCare</span></a
+            >
           </h1>
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-instagram"></i></a>
+          <a href=""><i class="fa fa-youtube"></i></a>
         </section>
       </div>
       <hr />
       <div class="copy_right">
         <p class="footer__copyright">Copyright © 2021 MelodiaHomeCare</p>
         <p class="footer__copyright">support@melodiahomecare.com</p>
-        <p class="footer__copyright made_by">RYKSOFT</p>
+        <p class="footer__copyright made_by">
+          Design and Developed by <span>RYKSOFT</span>
+        </p>
       </div>
     </footer>
     <script src="js/func.js"></script>
