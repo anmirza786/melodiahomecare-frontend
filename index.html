@@ -13,7 +13,7 @@
 
     <!-- jQuery -->
     <link rel="stylesheet" href="js/jquery.flipster.min.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.flipster.min.js"></script>
   </head>
   <body onload="collaps()">
@@ -50,19 +50,23 @@
                 <a href="#">Services <i class="fa fa-caret-down"></i></a>
               </div>
               <div class="dropdown-content">
-                <a href="">Skilled Nurse (SN)</a>
-                <a href="">Home Care Nursing (HCN)</a>
-                <a href="">Home Health Aide</a>
-                <a href="">Personal Care Assistance (PCA)</a>
-                <a href="">Homemaking Services</a>
-                <a href="">Therapy</a>
-                <a href="">IV Therapy</a>
-                <a href="">Interpretive Services</a>
-                <a href="">Independent Living Skills (ILS)</a>
-                <a href="">Companion</a>
-                <a href="">Respite</a>
-                <a href="">Social Services</a>
-                <a href="">Hospice</a>
+                <a href="skilled-nurse.html">Skilled Nurse (SN)</a>
+                <a href="home-care-nursing.html">Home Care Nursing (HCN)</a>
+                <a href="home-health-aide.html">Home Health Aide</a>
+                <a href="personal-care-assistance.html"
+                  >Personal Care Assistance (PCA)</a
+                >
+                <a href="homemaking-services.html">Homemaking Services</a>
+                <a href="therapy.html">Therapy</a>
+                <a href="IV-therap.html">IV Therapy</a>
+                <a href="interpretive-services.html">Interpretive Services</a>
+                <a href="independent-living-skills.html"
+                  >Independent Living Skills (ILS)</a
+                >
+                <a href="companion.html">Companion</a>
+                <a href="respite.html">Respite</a>
+                <a href="social-services.html">Social Services</a>
+                <a href="hospice.html">Hospice</a>
               </div>
             </div>
           </li>
@@ -339,11 +343,11 @@
         </div>
         <script>
           var coverflow = $("#coverflow").flipster({
+            delay: 0,
             loop: true,
             autoplay: 4000,
             pauseOnHover: false,
             style: "coverflow",
-            spacing: -0.6,
             click: false,
             keyboard: false,
             scrollwheel: false,

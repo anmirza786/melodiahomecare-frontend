@@ -252,8 +252,7 @@ h5 {
   color: var(--highlight-color);
 }
 .footer a {
-  color: var(--accent-color);
-  transition: color 0.1s;
+  color: var(--accent-color); 
 }
 .footer a:hover {
   color: var(--highlight-color);
