@@ -94,77 +94,37 @@
       </nav>
     </header>
     <section class="about-section">
-      <div class="container">
-        <div class="grid grid--x3 about-grid">
-          <div class="about-card">
-            <img
-              class="card-image"
-              src="images/intro-image.jpeg"
-              alt="Avatar"
-              style="width: 100%"
-            />
-            <div class="card-container">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
+        <div class="container">
+          <div class="grid grid--x3 about-grid">
+            <div class="about-card">
+              <img
+                class="card-image"
+                src="images/intro-image.jpeg"
+                alt="Avatar"
+                style="width: 100%"
+              />
+              <div class="card-container">
+                <h4><b>John Doe</b></h4>
+                <p>Architect & Engineer</p>
+                <button class="card-btn" onclick="popup(1)">More</button>
+              </div>
             </div>
-          </div>
-          <div class="about-card">
-            <img
-              class="card-image"
-              src="images/intro-image.jpeg"
-              alt="Avatar"
-              style="width: 100%"
-            />
-            <div class="card-container">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
-            </div>
-          </div>
-          <div class="about-card">
-            <img
-              class="card-image"
-              src="images/intro-image.jpeg"
-              alt="Avatar"
-              style="width: 100%"
-            />
-            <div class="card-container">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
-            </div>
-          </div>
-          <div class="about-card">
-            <img
-              class="card-image"
-              src="images/intro-image.jpeg"
-              alt="Avatar"
-              style="width: 100%"
-            />
-            <div class="card-container">
-              <h4><b>John Doe</b></h4>
-              <p>Architect & Engineer</p>
+            <div class="popup" id="1">
+              <div class="overlay"></div>
+              <div class="content">
+                <div class="close-btn" onclick="popup(1)">&times;</div>
+                <h6>Title</h6>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Tenetur nemo tempore sint repudiandae voluptatum architecto
+                  aliquid saepe iure aperiam perferendis ipsum libero ullam
+                  perspiciatis facere incidunt nulla nam, ad fugit!
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer class="block block--dark footer">
-      <div class="container grid footer__sections">
-        <section class="collapsable footer__section">
-          <header class="collapsable__header">
-            <h2 class="collapsable__heading footer__heading">Basics</h2>
-            <svg class="icon icon--white collapsable__chevron">
-              <use xlink:href="images/sprite.svg#chevron"></use>
-            </svg>
-          </header>
-          <div class="collapsable__content">
-            <ul class="list footer__list">
-              <li><a href="">Home</a></li>
-              <li><a href="">Payment</a></li>
-              <li><a href="">About</a></li>
-              <li class="subheading"><a href="">About</a></li>
-            </ul>
-          </div>
-        </section>
+      </section>
         <section class="collapsable footer__section">
           <header class="collapsable__header">
             <h2 class="collapsable__heading footer__heading">
@@ -202,5 +162,6 @@
         </p>
       </div>
     </footer>
+    <script src="js/func.js"></script>
   </body>
 </html>

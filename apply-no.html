@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="nav__container">
+      <nav class="nav collapsible container" id="navi">
+        <h1 class="nav__heading">
+          <a href="practice.html"
+            ><i class="fa fa-stethoscope"></i>
+            <span style="font-weight: bolder">MelodiaHomeCare</span></a
+          >
+        </h1>
+        <svg class="icon nav-toggler" onclick="expand()">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <svg class="nav-cross icon-small" onclick="collaps()">
+          <use xlink:href="images/sprite-x.svg#letter-x"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item collapsible--drop">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <a href="#">About <i class="fa fa-caret-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">Services & Areas</a>
+                <a href="#">Testimonials</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item collapsible--drop">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <a href="#">Services <i class="fa fa-caret-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="skilled-nurse.html">Skilled Nurse (SN)</a>
+                <a href="home-care-nursing.html">Home Care Nursing (HCN)</a>
+                <a href="home-health-aide.html">Home Health Aide</a>
+                <a href="personal-care-assistance.html"
+                  >Personal Care Assistance (PCA)</a
+                >
+                <a href="homemaking-services.html">Homemaking Services</a>
+                <a href="therapy.html">Therapy</a>
+                <a href="IV-therap.html">IV Therapy</a>
+                <a href="interpretive-services.html">Interpretive Services</a>
+                <a href="independent-living-skills.html"
+                  >Independent Living Skills (ILS)</a
+                >
+                <a href="companion.html">Companion</a>
+                <a href="respite.html">Respite</a>
+                <a href="social-services.html">Social Services</a>
+                <a href="hospice.html">Hospice</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a href="#">Payment</a></li>
+          <li class="nav__item collapsible--drop">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <a href="#">Career <i class="fa fa-caret-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">Employee Benefits</a>
+                <a href="#">Opening</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+          <li class="nav__item collapsible--drop">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <a href="#">Hospice <i class="fa fa-caret-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">What is Hospice?</a>
+                <a href="#">FAQ</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item btn-nav">
+            <a href="#" class="btn" style="padding: 10px; margin-top: 10px"
+              >Apply Now</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="apply_now">
+      <div class="container container-form">
+        <header>Apply Now</header>
+        <div class="progress-bar">
+          <div class="step">
+            <p></p>
+            <div class="bullet">
+              <span>1</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+          <div class="step">
+            <p></p>
+            <div class="bullet">
+              <span>2</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+          <div class="step">
+            <p></p>
+            <div class="bullet">
+              <span>3</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+          <div class="step">
+            <p></p>
+            <div class="bullet">
+              <span>4</span>
+            </div>
+            <div class="check fas fa-check"></div>
+          </div>
+        </div>
+        <div class="form-outer">
+          <form action="#">
+            <div class="page slide-page">
+              <div class="title">How to Apply</div>
+              <div>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Iusto cumque modi, quia neque fugit excepturi provident
+                    repellat facere aut porro voluptatibus necessitatibus
+                    deserunt. Repellat ut aspernatur minus fugit ad porro enim
+                    explicabo, ex ratione officia maiores expedita ullam nostrum
+                    nulla quisquam odit culpa sapiente soluta debitis quae eum.
+                    Eaque, quisquam!
+                  </p>
+                </div>
+              </div>
+              <div class="field btns">
+                <button class="firstNext next">Next</button>
+              </div>
+            </div>
+            <div class="page" id="page-2">
+              <div class="title">Basic Information:</div>
+              <div class="field">
+                <div class="label">Date of Application:</div>
+                <input type="datetime-local" required />
+              </div>
+              <div class="field">
+                <div class="label">Position(s) Applied For:</div>
+                <input type="text" required />
+              </div>
+              <div class="field--radio">
+                <div class="label">
+                  Which Office Location are you applying for?
+                </div>
+                <fieldset id="Location">
+                  <input
+                    type="radio"
+                    name="Location"
+                    id=""
+                    value="Location 1"
+                  />Location 1
+                  <input
+                    type="radio"
+                    name="Location"
+                    id=""
+                    value="Location 2"
+                  />Location 2
+                  <input
+                    type="radio"
+                    name="Location"
+                    id=""
+                    value="Location 3"
+                  />Location 3
+                  <input
+                    type="radio"
+                    name="Location"
+                    id=""
+                    value="Location 4"
+                  />Location 4
+                  <input
+                    type="radio"
+                    name="Location"
+                    id=""
+                    value="Location 5"
+                  />Location 5
+                </fieldset>
+              </div>
+              <div class="field--radio">
+                <div class="label">
+                  If you are open to work in other offices, please apply for
+                  other(s):
+                </div>
+                <fieldset id="Location">
+                  <input
+                    type="checkbox"
+                    name="Location"
+                    id=""
+                    value="Location 1"
+                  />Location 1
+                  <input
+                    type="checkbox"
+                    name="Location"
+                    id=""
+                    value="Location 2"
+                  />Location 2
+                  <input
+                    type="checkbox"
+                    name="Location"
+                    id=""
+                    value="Location 3"
+                  />Location 3
+                  <input
+                    type="checkbox"
+                    name="Location"
+                    id=""
+                    value="Location 4"
+                  />Location 4
+                  <input
+                    type="checkbox"
+                    name="Location"
+                    id=""
+                    value="Location 5"
+                  />Location 5
+                </fieldset>
+              </div>
+              <div class="field--radio">
+                <div class="label">How did you hear about us?</div>
+                <fieldset id="sourcs">
+                  <input
+                    type="radio"
+                    name="Location"
+                    id=""
+                    value="Location 1"
+                  />Source 1
+                  <input
+                    type="radio"
+                    name="Source"
+                    id=""
+                    value="Source 2"
+                  />Source 2
+                  <input
+                    type="radio"
+                    name="Source"
+                    id=""
+                    value="Source 3"
+                  />Source 3
+                  <input
+                    type="radio"
+                    name="Source"
+                    id=""
+                    value="Source 4"
+                  />Source 4
+                  <input
+                    type="radio"
+                    name="Source"
+                    id=""
+                    value="Source 5"
+                  />Source 5
+                  <input
+                    type="radio"
+                    name="Source"
+                    id=""
+                    value="Source 6"
+                  />Source 6
+                  <input
+                    type="radio"
+                    name="Source"
+                    id=""
+                    value="Source 7"
+                  />Source 7
+                  <input
+                    type="radio"
+                    name="Source"
+                    id=""
+                    value="Source 8"
+                  />Source 8
+                  <input
+                    type="radio"
+                    name="Source"
+                    id=""
+                    value="Source 9"
+                  />others
+                </fieldset>
+              </div>
+              <div class="field">
+                <div class="label">
+                  If reffered by other employ please enter the name below.
+                </div>
+                <input type="text" />
+              </div>
+              <div class="sub_title">General Questions:</div>
+              <div class="field">
+                <div class="label">
+                  If you are under 18 can you provide proof of your eligibility
+                  of work?
+                </div>
+                <select name="" id="">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                  <option value="not-apply">Does not apply</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="label">Hove you worked for our company?</div>
+                <select name="" id="">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+              <div class="field">
+                <div class="label">Are you currently Employed?</div>
+                <select name="" id="">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+              <div class="field btns">
+                <button class="prev-1 prev">Previous</button>
+                <button class="next-1 next">Next</button>
+              </div>
+            </div>
+            <div class="page" id="page-3">
+              <div class="title">Personal Information:</div>
+              <div class="tab--1x2">
+                <div class="field col-40">
+                  <div class="label">First Name</div>
+                  <input type="text" required />
+                </div>
+                <div class="field col-40">
+                  <div class="label">First Name</div>
+                  <input type="text" required />
+                </div>
+              </div>
+              <div class="sub_title">Address:</div>
+              <div class="tab--1x2">
+                <div class="field col-40">
+                  <div class="label">Address 1</div>
+                  <input type="text" required />
+                </div>
+                <div class="field col-40">
+                  <div class="label">Address 2</div>
+                  <input type="text" required />
+                </div>
+              </div>
+              <div class="tab--1x2">
+                <div class="field col-40">
+                  <div class="label">City</div>
+                  <input type="text" required />
+                </div>
+                <div class="field col-40">
+                  <div class="label">State</div>
+                  <input type="text" required />
+                </div>
+              </div>
+              <div class="tab--1x2">
+                <div class="field col-40">
+                  <div class="label">Zip Code</div>
+                  <input type="text" required />
+                </div>
+              </div>
+              <div class="sub_title">Contact Information:</div>
+              <div class="tab--1x2">
+                <div class="field col-40">
+                  <div class="label">Phone</div>
+                  <input type="number" required />
+                </div>
+                <div class="field col-40">
+                  <div class="label">Email</div>
+                  <input type="email" required />
+                </div>
+              </div>
+              <div class="field">
+                <div class="label">
+                  On what date could you be avilable for work?
+                </div>
+                <input type="date" name="avilable" id="avilable" />
+              </div>
+              <div class="field">
+                <div class="label">Can you travel if your job requires it?</div>
+                <select name="" id="">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+              <div class="field btns">
+                <button class="prev-2 prev">Previous</button>
+                <button class="next-2 next">Next</button>
+              </div>
+            </div>
+            <div class="page" id="page-4">
+              <div class="title">Submit the CV and Digital Signature:</div>
+              <div class="field">
+                <div class="label">Upload Your CV:</div>
+                <input type="file" required />
+              </div>
+              <div class="field">
+                <div class="label">Upload your digital signature:</div>
+                <input type="file" required value="Choss a file" />
+              </div>
+              <div class="field btns">
+                <button class="prev-3 prev">Previous</button>
+                <button class="submit">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsable footer__section">
+          <header class="collapsable__header">
+            <h2 class="collapsable__heading footer__heading">Basics</h2>
+            <svg class="icon icon--white collapsable__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsable__content">
+            <ul class="list footer__list">
+              <li><a href="">Home</a></li>
+              <li><a href="">Payment</a></li>
+              <li><a href="">About</a></li>
+              <li class="subheading"><a href="">About</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsable footer__section">
+          <header class="collapsable__header">
+            <h2 class="collapsable__heading footer__heading">
+              How Do We Work?
+            </h2>
+            <svg class="icon icon--white collapsable__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsable__content">
+            <ul class="list footer__list">
+              <li><a href="">Item 1</a></li>
+              <li><a href="">Item 2</a></li>
+              <li><a href="">Item 3</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <h1 class="nav__heading footer__brand-heading">
+            <a href="#"
+              ><i class="fa fa-stethoscope"></i> <span>MelodiaHomeCare</span></a
+            >
+          </h1>
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-instagram"></i></a>
+          <a href=""><i class="fa fa-youtube"></i></a>
+        </section>
+      </div>
+      <hr />
+      <div class="copy_right">
+        <p class="footer__copyright">Copyright © 2021 MelodiaHomeCare</p>
+        <p class="footer__copyright">support@melodiahomecare.com</p>
+        <p class="footer__copyright made_by">
+          Design and Developed by <span>RYKSOFT</span>
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
