@@ -132,15 +132,23 @@ h5 {
   float: left;
   overflow: hidden;
 }
-
+.dropdown .dropbtn p {
+  color: var(--highlight-color);
+  margin: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 1.2rem;
   border: none;
   outline: none;
-  color: var(--accent-color);
+
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+}
+.dropdown .dropbtn:hover p {
+  color: var(--accent-color);
 }
 .dropdown:hover .dropbtn {
   background-color: inherit;
@@ -511,8 +519,8 @@ hr {
 }
 .introduction .introduction--image img {
   margin-top: 25px;
-  width: 20%;
-  height: 30%;
+  width: 50%;
+  height: auto;
 }
 .introduction .introduction--heading {
   border-left: 4px solid var(--primary-color);
@@ -535,9 +543,11 @@ hr {
   display: flex;
   align-self: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 80%;
   text-align: left;
+  flex-direction: column-reverse;
 }
 .introduction--image img {
   max-width: 100%;
@@ -556,6 +566,7 @@ hr {
     margin-bottom: 2px;
   }
   .introduction--image {
+    flex-direction: row;
     margin-left: 2%;
   }
   .introduction--image img {
@@ -915,7 +926,7 @@ hr {
 
 ::selection {
   color: #fff;
-  background: #d43f8d;
+  background: var(--highlight-color);
 }
 .container-form {
   max-width: 1140px;
@@ -978,7 +989,7 @@ form .page .field button {
   width: 250px;
   height: calc(70% + 5px);
   border: none;
-  background: #d33f8d;
+  background: var(--highlight-color);
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
@@ -1030,8 +1041,8 @@ form .page .btns button.next {
   background: white;
 }
 .progress-bar .step .bullet.active {
-  border-color: #d43f8d;
-  background: #d43f8d;
+  border-color: var(--highlight-color);
+  background: var(--highlight-color);
 }
 .progress-bar .step .bullet span {
   position: absolute;
@@ -1055,7 +1066,7 @@ form .page .btns button.next {
   width: 0%;
 }
 .progress-bar .step.active:after {
-  background: #d43f8d;
+  background: var(--highlight-color);
   transform: scaleX(0);
   transform-origin: left;
   animation: animate 0.3s linear forwards;
@@ -1070,7 +1081,7 @@ form .page .btns button.next {
   display: none;
 }
 .progress-bar .step p.active {
-  color: #d43f8d;
+  color: var(--highlight-color);
   transition: 0.2s linear;
 }
 .progress-bar .step .check {
@@ -1083,7 +1094,8 @@ form .page .btns button.next {
 }
 .progress-bar .step .check.active {
   display: block;
-  color: #fff;
+  color: var(--accent-color);
+  top: 33px;
 }
 #page-2 {
   display: none;
@@ -1096,9 +1108,15 @@ form .page .btns button.next {
 #page-4 {
   display: none;
 }
+#first-next {
+  width: 100%;
+}
 @media screen and (max-width: 768px) and (min-width: 320px) {
   form .page .field input {
     margin-top: 15px;
+  }
+  form .page .field .label {
+    top: 0;
   }
   form .page .field select {
     margin-top: 20px;
