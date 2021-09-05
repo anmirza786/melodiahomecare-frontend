@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MelodiaHomeCare - Hospice Service</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- jQuery -->
+    <link rel="stylesheet" href="js/jquery.flipster.min.css" />
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+  </head>
+  <body onload="collaps()">
+    <header class="nav__container">
+        <nav class="nav collapsible container" id="navi">
+          <h1 class="nav__heading">
+            <a href="practice.html"
+              ><i class="fa fa-stethoscope"></i>
+              <span style="font-weight: bolder">MelodiaHomeCare</span></a
+            >
+          </h1>
+          <svg class="icon nav-toggler" onclick="expand()">
+            <use xlink:href="images/sprite.svg#menu"></use>
+          </svg>
+          <svg class="nav-cross icon-small" onclick="collaps()">
+            <use xlink:href="images/sprite-x.svg#letter-x"></use>
+          </svg>
+          <ul class="list nav__list collapsible__content">
+            <li class="nav__item"><a href="index.html">Home</a></li>
+            <li class="nav__item collapsible--drop">
+              <div class="dropdown">
+                <div class="dropbtn">
+                  <p>About <i class="fa fa-caret-down"></i></p>
+                </div>
+                <div class="dropdown-content">
+                  <a href="about.html">Team</a>
+                  <a href="">Testimonials</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item collapsible--drop">
+              <div class="dropdown">
+                <div class="dropbtn">
+                  <p>Services <i class="fa fa-caret-down"></i></p>
+                </div>
+                <div class="dropdown-content">
+                  <a href="skilled-nurse.html">Skilled Nurse (SN)</a>
+                  <a href="home-care-nursing.html">Home Care Nursing (HCN)</a>
+                  <a href="home-health-aide.html">Home Health Aide</a>
+                  <a href="personal-care-assistance.html"
+                    >Personal Care Assistance (PCA)</a
+                  >
+                  <a href="homemaking-services.html">Homemaking Services</a>
+                  <a href="therapy.html">Therapy</a>
+                  <a href="IV-therap.html">IV Therapy</a>
+                  <a href="interpretive-services.html">Interpretive Services</a>
+                  <a href="independent-living-skills.html"
+                    >Independent Living Skills (ILS)</a
+                  >
+                  <a href="companion.html">Companion</a>
+                  <a href="respite.html">Respite</a>
+                  <a href="social-services.html">Social Services</a>
+                  <a href="hospice.html">Hospice</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item"><a href="payments.html">Payment</a></li>
+            <li class="nav__item collapsible--drop">
+              <div class="dropdown">
+                <div class="dropbtn">
+                  <p>Career <i class="fa fa-caret-down"></i></p>
+                </div>
+                <div class="dropdown-content">
+                  <a href="employee-benefits.html">Employee Benefits</a>
+                  <a href="job-opening.html">Opening</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item"><a href="contact-us.html">Contact</a></li>
+            <li class="nav__item collapsible--drop">
+              <div class="dropdown">
+                <div class="dropbtn">
+                  <p>Hospice <i class="fa fa-caret-down"></i></p>
+                </div>
+                <div class="dropdown-content">
+                  <a href="what-is-hospice.html">What is Hospice?</a>
+                  <a href="faq.html">FAQ</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item btn-nav">
+              <a
+                href="apply-no.html"
+                class="btn"
+                style="padding: 10px; margin-top: 10px"
+                >Apply Now</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <section class="introduction--section">
+      <div class="introduction">
+        <div class="container">
+          <div class="introduction--heading">
+            <h1>Contact Us</h1>
+          </div>
+          <div class="introduction--image">
+            <div>
+              <h4>Why Us</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+                veniam, quas aspernatur quos incidunt ducimus necessitatibus, ad
+                perferendis, nam voluptas sint cupiditate omnis odio
+                voluptatibus consectetur labore pariatur autem magni.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-us-form">
+          <form action="." method="POST" class="contact-form">
+            <label>First Name</label>
+            <input type="text" />
+            <label>Last Name</label>
+            <input type="text" />
+            <label>Address</label>
+            <input type="text" />
+            <label>City</label>
+            <input type="text" />
+            <label>State</label>
+            <input type="text" />
+            <label>Zip</label>
+            <input type="number" />
+            <label>Email</label>
+            <input type="email" />
+            <label>Phone Number</label>
+            <input type="text" />
+            <label>Questions/Comments</label>
+            <textarea name="" id="" cols="10" rows="5"></textarea>
+            <input type="submit" />
+          </form>
+          <div class="how-to-contact">
+            <h4>Why to contact us?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              harum error numquam reprehenderit quasi, quidem aliquam non vel,
+              incidunt expedita, consequuntur illo ullam ipsa excepturi
+              aspernatur magni ea natus debitis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsable footer__section">
+          <header class="collapsable__header">
+            <h2 class="collapsable__heading footer__heading">Basics</h2>
+            <svg class="icon icon--white collapsable__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsable__content">
+            <ul class="list footer__list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Payment</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsable footer__section">
+          <header class="collapsable__header">
+            <h2 class="collapsable__heading footer__heading">
+              How Do We Work?
+            </h2>
+            <svg class="icon icon--white collapsable__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsable__content">
+            <ul class="list footer__list">
+              <li><a href="">Item 1</a></li>
+              <li><a href="">Item 2</a></li>
+              <li><a href="">Item 3</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer__brand">
+          <h1 class="nav__heading footer__brand-heading">
+            <a href="#"
+              ><i class="fa fa-stethoscope"></i> <span>MelodiaHomeCare</span></a
+            >
+          </h1>
+          <a href=""><i class="fa fa-facebook"></i></a>
+          <a href=""><i class="fa fa-instagram"></i></a>
+          <a href=""><i class="fa fa-youtube"></i></a>
+        </section>
+      </div>
+      <hr />
+      <div class="copy_right">
+        <p class="footer__copyright">Copyright © 2021 MelodiaHomeCare</p>
+        <p class="footer__copyright">support@melodiahomecare.com</p>
+        <p class="footer__copyright made_by">
+          Design and Developed by <span>RYKSOFT</span>
+        </p>
+      </div>
+    </footer>
+    <script src="js/func.js"></script>
+  </body>
+</html>
