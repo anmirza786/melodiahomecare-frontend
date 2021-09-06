@@ -1,5 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/guruxjxh/public_html/
+    - export DEPLOYPATH=/home/guruxjxh/melodiahomecare.gurucompetitions.com/
     - /bin/cp * $DEPLOYPATH
+    -/bin/cp/css/ * $DEPLOYPATH
+    -/bin/cp/js/ * $DEPLOYPATH
+    -/bin/cp/images/ * $DEPLOYPATH
