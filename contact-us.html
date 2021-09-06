@@ -18,93 +18,93 @@
   </head>
   <body onload="collaps()">
     <header class="nav__container">
-        <nav class="nav collapsible container" id="navi">
-          <h1 class="nav__heading">
-            <a href="practice.html"
-              ><i class="fa fa-stethoscope"></i>
-              <span style="font-weight: bolder">MelodiaHomeCare</span></a
+      <nav class="nav collapsible container" id="navi">
+        <h1 class="nav__heading">
+          <a href="practice.html"
+            ><i class="fa fa-stethoscope"></i>
+            <span style="font-weight: bolder">MelodiaHomeCare</span></a
+          >
+        </h1>
+        <svg class="icon nav-toggler" onclick="expand()">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <svg class="nav-cross icon-small" onclick="collaps()">
+          <use xlink:href="images/sprite-x.svg#letter-x"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="index.html">Home</a></li>
+          <li class="nav__item collapsible--drop">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <p>About <i class="fa fa-caret-down"></i></p>
+              </div>
+              <div class="dropdown-content">
+                <a href="about.html">Team</a>
+                <a href="">Testimonials</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item collapsible--drop">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <p>Services <i class="fa fa-caret-down"></i></p>
+              </div>
+              <div class="dropdown-content">
+                <a href="skilled-nurse.html">Skilled Nurse (SN)</a>
+                <a href="home-care-nursing.html">Home Care Nursing (HCN)</a>
+                <a href="home-health-aide.html">Home Health Aide</a>
+                <a href="personal-care-assistance.html"
+                  >Personal Care Assistance (PCA)</a
+                >
+                <a href="homemaking-services.html">Homemaking Services</a>
+                <a href="therapy.html">Therapy</a>
+                <a href="IV-therap.html">IV Therapy</a>
+                <a href="interpretive-services.html">Interpretive Services</a>
+                <a href="independent-living-skills.html"
+                  >Independent Living Skills (ILS)</a
+                >
+                <a href="companion.html">Companion</a>
+                <a href="respite.html">Respite</a>
+                <a href="social-services.html">Social Services</a>
+                <a href="hospice.html">Hospice</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a href="payments.html">Payment</a></li>
+          <li class="nav__item collapsible--drop">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <p>Career <i class="fa fa-caret-down"></i></p>
+              </div>
+              <div class="dropdown-content">
+                <a href="employee-benefits.html">Employee Benefits</a>
+                <a href="job-opening.html">Opening</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a href="contact-us.html">Contact</a></li>
+          <li class="nav__item collapsible--drop">
+            <div class="dropdown">
+              <div class="dropbtn">
+                <p>Hospice <i class="fa fa-caret-down"></i></p>
+              </div>
+              <div class="dropdown-content">
+                <a href="what-is-hospice.html">What is Hospice?</a>
+                <a href="faq.html">FAQ</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item btn-nav">
+            <a
+              href="apply-no.html"
+              class="btn"
+              style="padding: 10px; margin-top: 10px"
+              >Apply Now</a
             >
-          </h1>
-          <svg class="icon nav-toggler" onclick="expand()">
-            <use xlink:href="images/sprite.svg#menu"></use>
-          </svg>
-          <svg class="nav-cross icon-small" onclick="collaps()">
-            <use xlink:href="images/sprite-x.svg#letter-x"></use>
-          </svg>
-          <ul class="list nav__list collapsible__content">
-            <li class="nav__item"><a href="index.html">Home</a></li>
-            <li class="nav__item collapsible--drop">
-              <div class="dropdown">
-                <div class="dropbtn">
-                  <p>About <i class="fa fa-caret-down"></i></p>
-                </div>
-                <div class="dropdown-content">
-                  <a href="about.html">Team</a>
-                  <a href="">Testimonials</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav__item collapsible--drop">
-              <div class="dropdown">
-                <div class="dropbtn">
-                  <p>Services <i class="fa fa-caret-down"></i></p>
-                </div>
-                <div class="dropdown-content">
-                  <a href="skilled-nurse.html">Skilled Nurse (SN)</a>
-                  <a href="home-care-nursing.html">Home Care Nursing (HCN)</a>
-                  <a href="home-health-aide.html">Home Health Aide</a>
-                  <a href="personal-care-assistance.html"
-                    >Personal Care Assistance (PCA)</a
-                  >
-                  <a href="homemaking-services.html">Homemaking Services</a>
-                  <a href="therapy.html">Therapy</a>
-                  <a href="IV-therap.html">IV Therapy</a>
-                  <a href="interpretive-services.html">Interpretive Services</a>
-                  <a href="independent-living-skills.html"
-                    >Independent Living Skills (ILS)</a
-                  >
-                  <a href="companion.html">Companion</a>
-                  <a href="respite.html">Respite</a>
-                  <a href="social-services.html">Social Services</a>
-                  <a href="hospice.html">Hospice</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav__item"><a href="payments.html">Payment</a></li>
-            <li class="nav__item collapsible--drop">
-              <div class="dropdown">
-                <div class="dropbtn">
-                  <p>Career <i class="fa fa-caret-down"></i></p>
-                </div>
-                <div class="dropdown-content">
-                  <a href="employee-benefits.html">Employee Benefits</a>
-                  <a href="job-opening.html">Opening</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav__item"><a href="contact-us.html">Contact</a></li>
-            <li class="nav__item collapsible--drop">
-              <div class="dropdown">
-                <div class="dropbtn">
-                  <p>Hospice <i class="fa fa-caret-down"></i></p>
-                </div>
-                <div class="dropdown-content">
-                  <a href="what-is-hospice.html">What is Hospice?</a>
-                  <a href="faq.html">FAQ</a>
-                </div>
-              </div>
-            </li>
-            <li class="nav__item btn-nav">
-              <a
-                href="apply-no.html"
-                class="btn"
-                style="padding: 10px; margin-top: 10px"
-                >Apply Now</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <section class="introduction--section">
       <div class="introduction">
@@ -131,23 +131,23 @@
         <div class="contact-us-form">
           <form action="." method="POST" class="contact-form">
             <label>First Name</label>
-            <input type="text" />
+            <input type="text" class="input" />
             <label>Last Name</label>
-            <input type="text" />
+            <input type="text" class="input" />
             <label>Address</label>
-            <input type="text" />
+            <input type="text" class="input" />
             <label>City</label>
-            <input type="text" />
+            <input type="text" class="input" />
             <label>State</label>
-            <input type="text" />
+            <input type="text" class="input" />
             <label>Zip</label>
-            <input type="number" />
+            <input type="number" class="input" />
             <label>Email</label>
-            <input type="email" />
+            <input type="email" class="input" />
             <label>Phone Number</label>
-            <input type="text" />
+            <input type="text" class="input" />
             <label>Questions/Comments</label>
-            <textarea name="" id="" cols="10" rows="5"></textarea>
+            <textarea name="" id="" cols="10" rows="5" class="input"></textarea>
             <input type="submit" />
           </form>
           <div class="how-to-contact">

@@ -1145,7 +1145,7 @@ form .page .btns button.next {
   margin-bottom: 5px;
   font-size: 1rem;
 }
-.contact-us-form .contact-form input {
+.contact-us-form .contact-form .input {
   height: 100%;
   max-width: 100%;
   border: 1px solid lightgrey;
@@ -1166,7 +1166,7 @@ form .page .btns button.next {
 .contact-us-form .contact-form input[type="submit"]:focus {
   outline: none;
 }
-.contact-us-form .contact-form input:focus {
+.contact-us-form .contact-form .input:focus {
   outline: none;
 }
 .contact-us-form .contact-form textarea {
