@@ -937,6 +937,7 @@ hr {
     height: 20px;
   }
 }
+
 /* Apply Now */
 
 ::selection {
@@ -986,7 +987,7 @@ form .page .field .label {
   top: -15px;
   font-weight: 500;
 }
-form .page .field input {
+form .page .field .input {
   height: 100%;
   width: 100%;
   border: 1px solid lightgrey;
@@ -994,13 +995,8 @@ form .page .field input {
   padding-left: 15px;
   font-size: 18px;
 }
-form .page .field select {
-  width: 100%;
-  padding-left: 10px;
-  font-size: 17px;
-  font-weight: 500;
-}
-form .page .field button {
+form .page .field button,
+form .page .field .btns .submit {
   width: 250px;
   height: calc(70% + 5px);
   border: none;
@@ -1014,10 +1010,9 @@ form .page .field button {
   text-transform: uppercase;
   transition: 0.5s ease;
 }
-form .page .field button:hover {
+form .page .field button:hover,
+form .page .field .submit:hover {
   background: #000;
-}
-form .page .btns button {
 }
 form .page .btns button.prev {
   margin-right: 3px;
@@ -1127,14 +1122,11 @@ form .page .btns button.next {
   width: 100%;
 }
 @media screen and (max-width: 768px) and (min-width: 320px) {
-  form .page .field input {
+  form .page .field .input {
     margin-top: 15px;
   }
   form .page .field .label {
     top: 0;
-  }
-  form .page .field select {
-    margin-top: 20px;
   }
 }
 
@@ -1167,31 +1159,23 @@ form .page .btns button.next {
   padding-left: 15px;
   font-size: 1rem;
 }
-.contact-us-form .contact-form input[type="submit"] {
+.contact-us-form .contact-form .submit {
   margin-top: 10px;
   width: 100px;
   padding: 0;
   color: white;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
   background: var(--highlight-color);
+  transition: all 0.4s;
 }
-.contact-us-form .contact-form input[type="submit"]:hover {
+.contact-us-form .contact-form .submit:hover {
   background: black;
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
 }
-.contact-us-form .contact-form input[type="submit"]:focus {
+.contact-us-form .contact-form .submit:focus {
   outline: none;
 }
 .contact-us-form .contact-form .input:focus {
-  outline: none;
-}
-.contact-us-form .contact-form textarea {
-  height: 100%;
-  max-width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  padding-left: 15px;
-  font-size: 1rem;
-}
-.contact-us-form .contact-form textarea:focus {
   outline: none;
 }
 .how-to-contact {
@@ -1221,5 +1205,25 @@ form .page .btns button.next {
   }
   .how-to-contact {
     width: 100%;
+  }
+}
+
+.ancor {
+  color: #05386b;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 1000s linear;
+}
+.ancor:hover {
+  text-decoration: underline;
+}
+.khat {
+  width: 85vw;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 340px) {
+  .khat {
+    width: 100vw;
   }
 }
